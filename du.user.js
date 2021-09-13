@@ -53,7 +53,7 @@ function easyTest() {
         bindEvent(window, 'keyup', function(event) {
             log('keyup')
             var target = event.target
-            var keyword = target.value
+            var keyword = target.value || ""
             var answer = findWithKeyword(keyword)
             if (event.key == 'Enter' && answer != null) {
                 target.value = answer
