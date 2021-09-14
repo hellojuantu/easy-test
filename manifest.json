@@ -14,7 +14,7 @@
     "content_scripts": [
         {
             "js":[
-                "data.js",
+                "db.js",
                 "du.user.js"
             ],
             "matches":["<all_urls>"]
